@@ -1,1 +1,634 @@
-<p>&#x7CD6;&#x5C3F;&#x75C5;&#xFF08;diabetes mellitus&#xFF09;&#x662F;&#x4E00;&#x7EC4;&#x4EE5;&#x9AD8;&#x8840;&#x7CD6;&#x4E3A;&#x7279;&#x5F81;&#x7684;&#x4EE3;&#x8C22;&#x6027;&#x75BE;&#x75C5;&#x3002;&#x9AD8;&#x8840;&#x7CD6;&#x5219;&#x662F;&#x7531;&#x4E8E;&#x80F0;&#x5C9B;&#x7D20;&#x5206;&#x6CCC;&#x7F3A;&#x9677;&#x6216;&#x5176;&#x751F;&#x7269;&#x4F5C;&#x7528;&#x53D7;&#x635F;&#xFF0C;&#x6216;&#x4E24;&#x8005;&#x517C;&#x6709;&#x5F15;&#x8D77;&#x3002;&#x7CD6;&#x5C3F;&#x75C5;&#x60A3;&#x8005;&#x957F;&#x671F;&#x5B58;&#x5728;&#x7684;&#x9AD8;&#x8840;&#x7CD6;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x5404;&#x79CD;&#x7EC4;&#x7EC7;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x773C;&#x3001;&#x80BE;&#x3001;&#x5FC3;&#x810F;&#x3001;&#x8840;&#x7BA1;&#x3001;&#x795E;&#x7ECF;&#x7684;&#x6162;&#x6027;&#x635F;&#x4F24;&#x548C;&#x529F;&#x80FD;&#x969C;&#x788D;&#x3002;</p><p>&#x73B0;&#x4EE3;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x8868;&#x660E;&#xFF1A;&#x7CD6;&#x5C3F;&#x75C5;&#x5B58;&#x5728;&#x5BB6;&#x65CF;&#x53D1;&#x75C5;&#x503E;&#x5411;&#xFF0C;1/4&#xFF5E;1/2&#x60A3;&#x8005;&#x6709;&#x7CD6;&#x5C3F;&#x75C5;&#x5BB6;&#x65CF;&#x53F2;&#xFF0C;&#x7CD6;&#x5C3F;&#x75C5;&#x7684;&#x53D1;&#x75C5;&#x4E0E;&#x9057;&#x4F20;&#x6709;&#x5F88;&#x5927;&#x5173;&#x7CFB;&#x3002;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x5B58;&#x5728;&#x660E;&#x663E;&#x7684;&#x9057;&#x4F20;&#x7279;&#x6027;&#x4EE5;&#x53CA;&#x5F02;&#x8D28;&#x6027;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x53D1;&#x73B0;&#x591A;&#x79CD;&#x57FA;&#x56E0;&#x7A81;&#x53D8;&#xFF0C;&#x5982;&#x80F0;&#x5C9B;&#x7D20;&#x57FA;&#x56E0;&#x3001;&#x80F0;&#x5C9B;&#x7D20;&#x53D7;&#x4F53;&#x57FA;&#x56E0;&#x3001;&#x8461;&#x8404;&#x7CD6;&#x6FC0;&#x9176;&#x57FA;&#x56E0;&#x3001;&#x7EBF;&#x7C92;&#x4F53;&#x57FA;&#x56E0;&#x7B49;&#xFF0C;&#x4E0E;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x7684;&#x53D1;&#x75C5;&#x76F8;&#x5173;&#x3002;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x76F8;&#x5173;&#x6613;&#x611F;&#x57FA;&#x56E0;&#x7684;&#x7B5B;&#x67E5;&#x80FD;&#x5E2E;&#x52A9;&#x4E2A;&#x4F53;&#x5145;&#x5206;&#x4E86;&#x89E3;&#x81EA;&#x5DF1;&#x7684;&#x9057;&#x4F20;&#x72B6;&#x51B5;&#xFF0C;&#x63D0;&#x524D;&#x91C7;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x5065;&#x5EB7;&#x7BA1;&#x7406;&#x63AA;&#x65BD;&#xFF0C;&#x80FD;&#x6709;&#x6548;&#x9884;&#x9632;&#x6216;&#x5EF6;&#x7F13;&#x75BE;&#x75C5;&#x7684;&#x53D1;&#x751F;&#x3002;</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>检测报告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.0/normalize.css" />
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/main.css?v=1.2">
+    <script src="./js/lib-flexible.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+</head>
+
+<body>
+    <div class="basic-info">
+        <div class="theme">
+            <div class="name">2型糖尿病易感基因</div>
+        </div>
+        <div class="uer-info">
+            <div class="name">
+                <div class="text">李四闲</div>
+                <div class="img">
+                    <!-- TODO: 切换男女性别 -->
+                    <!-- <img src="./images/people_man.png"> -->
+                    <img src="./images/people_women.png">
+                </div>
+            </div>
+            <div class="birth">
+                <div class="label">出生日期：</div>
+                <div class="value">1980.06.12</div>
+            </div>
+            <div class="report-type">
+                <div class="label">标本类型：</div>
+                <div class="value">唾液</div>
+            </div>
+        </div>
+        <div class="report-info">
+            <div class="item">
+                <div class="left">
+                    <div class="label">检测方法：</div>
+                    <div class="value">基因分型</div>
+                </div>
+                <div class="right">
+                    <div class="label">标本收到日期：</div>
+                    <div class="value">2018.04.22</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="label">检测号码：</div>
+                    <div class="value">GWA9999999</div>
+                </div>
+                <div class="right">
+                    <div class="label">报告日期：</div>
+                    <div class="value">2018.06.12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="preface pra">
+        <div class="top">
+            尊敬的李四闲（女士）：
+        </div>
+        <p>您好！我们十分荣幸您选择为康基因公司进行本次基因检测服务！</p>
+        <p>我们很高兴为您提供此次检测的个性化基因检测报告，本检测对相关疾病的发生风险进行全面评估，由专业遗传学专家对您的疾病风险及生活习惯给予详细的解读和相应的健康指导，本次检测所涉及的DNA来自您最新提供的采集样本，检测内容有专业科学依据。本检测利用目前行业内先进的基因检测技术，准确获取相关位点基因型，从基因水平上对疾病的发生进行早期预测。</p>
+        <p>基于您的基因检测信息，我们提供个性化健康指导：</p>
+        <ul>
+            <li>疾病预测——在健康或亚健康时能准确预测患病易感风险；</li>
+            <li>疾病预防——主动调节外因（饮食/运动/生活习惯/环境），降低患病风险；</li>
+            <li>健康管理——优化常规检查方案，提供自身健康管理方案。</li>
+        </ul>
+        <p>根据世界卫生组织（WHO）报告，通过健康的生活方式，如戒烟、戒酒、运动和均衡饮食习惯以及有效运用当今的医疗手段（如定期筛检和早期检测），至少有50%以上的疾病是可以预防或避免的。针对相关疾病高风险的人群，我们会建议您加强对相关疾病的关注和认知，尽早开展相关健康检查，将患病风险控制在最低水平。</p>
+        <p>鉴于疾病发生机理的复杂性，当前医学对某些疾病的遗传基础认识的局限性及疾病的个体差异，我们不排除某些受检者有漏检的易感基因或致病变异位点。本检测报告仅供参考，不做临床诊断意见。</p>
+        <div class="bottom">为康(苏州) 基因科技有限公司</div>
+    </div>
+    <div class="disclaimer pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/report_disclaimer.png">
+            </div>
+            <div class="main">免责申明：</div>
+        </div>
+        <p>一、鉴于基因的复杂性及科研水平局限性，本检测并不能检测所有突变位点并提供完整的遗传信息；</p>
+        <p>二、限于现在的临床及科研水平，不是所有与药物反应相关的基因都被临床发现或证实；</p>
+        <p>三、鉴于当前医学检测技术水平的限制和受检者个体差异等原因，单次检测的结果仍有可能出现小概率的假阳性或假阴性；</p>
+        <p>四、该检测服务仅为临床治疗提供参考，本检测的结果不是临床的诊断结果，并且不可将本检测的结果做为最终诊断的唯一依据；</p>
+        <p>五、本公司只对受检样本和检测结果的一致性负责，而不能对受检者和受检样本的一致性负责；</p>
+        <p>六、基因信息属于个人隐私，我们郑重承诺将妥善保管您的相关数据，未经您本人授权不会用于其他目的。</p>
+    </div>
+    <div class="sense pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/science_knowledge.png">
+            </div>
+            <div class="main">科学常识：</div>
+            <div class="sub">了解以下科学常识，帮助您更好地解读报告</div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            1
+                        </div>
+                        <div>什么是基因？</div>
+                    </div>
+                    <p>基因（Gene）是具有遗传效应的 DNA 片段，是控制生物性状的基本遗传单位。染色体它主要通过调控或指导蛋白质的表达来控制生物个体的性状表现，比如人类的肤色、眼睛颜色、身高、体重等性状。生物体的生、老、病、死等一切生命现象都与基因有关，它也是决定生命健康的内在因素。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            2
+                        </div>
+                        <div>什么是单核苷酸多态性？</div>
+                    </div>
+                    <p>单核苷酸多态性（Single Nucleotide Polymorphism，SNP）主要是指在基因组水平上由单个核苷酸的变异所引起的 DNA 序列多态性。一般而言，SNP 变异频率大于1%。它是人类可遗传变异中最常见的一种。在人的基因组中不到1，000
+                        个碱基就有一个 SNP。有的人吸烟喝酒却长寿，有人自幼就病痛缠身，同一种治疗肿瘤的药物对一些人非常有效，对另一些人则完全无效，这些都与 SNP 有关。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            3
+                        </div>
+                        <div>什么是基因检测？</div>
+                    </div>
+                    <p>基因检测（ Genetic Testing ）是用特定设备对被检测者血液、其他体液或细胞的 DNA 分子信息做检测。基因检测可以用于疾病诊断，也可以用于疾病风险预测。疾病诊断是检测引起遗传性疾病的突变基因，目前应用最广泛的是新生儿遗传性疾病的检测和诊断以及某些常见病的辅助诊断。疾病风险预测是在疾病发生前就发现疾病发生的风险，可以采取有效的干预措施提早预防或延缓疾病的发生发展。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            4
+                        </div>
+                        <div>什么是基因突变？</div>
+                    </div>
+                    <p>基因突变（Gene Mutation）是基因组DNA分子发生的可遗传的变异现象。从分子水平上看，基因突变是指基因在结构上发生碱基的组成或排列顺序的改变，它包括单个碱基改变所引起的点突变，或多个碱基的插入、缺失、重复以及
+                        DNA 片段的倒置等。基因突变在人群中发生频率一般小于 1%。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            5
+                        </div>
+                        <div>药物代谢</div>
+                    </div>
+                    <p>药物代谢是研究药物在生物体内的吸收、分布、生物转化和排泄等过程的特点和规律的一门科学，即药物分子被机体吸收后，在机体作用下发生的化学结构转化药物的不同代谢类型关系到药物用药量的相应调整。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            6
+                        </div>
+                        <div>药物疗效</div>
+                    </div>
+                    <p>药物疗效是指药物的作用结果，有利于改善病人的生理生化功能或病理过程，使患病的机体恢复正常，疗效高指改善生理生化效果好，疗效低指改善生理生化功能效果不好。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            7
+                        </div>
+                        <div>药物不良反应</div>
+                    </div>
+                    <p>据世界卫生组织（WHO）报道，在全球范围内有50%以上的药物使用不当，半数的患者不能正确服药。我国卫生部药物不良反应监测中心数据显示，我国每年 5000万人住院，因药物不良反应住院的病人达250万，其中严重不良反应人数达50万，而因药物不良反应死亡的人数达19.2万，占总住院人数的0.38%。
+                    </p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            8
+                        </div>
+                        <div>个体化用药 </div>
+                    </div>
+                    <p>个体化用药，就是药物治疗“因人而异”、“量体裁衣”，在充分考虑每个病人 的遗传因素（即药物代谢基因类型）、性别、年龄、体重、生理病理特征以及正在服用的其它药物等综合情况的基础上制定安全、合理、有效、经济的药物治疗方案。</p>
+                </div>
+                <div class="swiper-slide sense-item">
+                    <div class="title">
+                        <div class="icon">
+                            9
+                        </div>
+                        <div>心血管疾病个体化用药</div>
+                    </div>
+                    <p>高血压、高血脂的发生与多种基因表型相关，基因表型不同，降压药物的治疗效果就存在显著差异，如血管紧张素原基因多态性与阿替洛尔的降压疗效相异。这便是药物个体差异，因此高血压患者可以根据检测结果而进行针对性的用药，达到高效、低毒、经济的治疗目的，从而有效地控制血压，防止并发症的到来，提高自身健康水平。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overview pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/test_item.png">
+            </div>
+            <div class="main">检测项目概述：</div>
+        </div>
+        <p>&#x7CD6;&#x5C3F;&#x75C5;&#xFF08;diabetes mellitus&#xFF09;&#x662F;&#x4E00;&#x7EC4;&#x4EE5;&#x9AD8;&#x8840;&#x7CD6;&#x4E3A;&#x7279;&#x5F81;&#x7684;&#x4EE3;&#x8C22;&#x6027;&#x75BE;&#x75C5;&#x3002;&#x9AD8;&#x8840;&#x7CD6;&#x5219;&#x662F;&#x7531;&#x4E8E;&#x80F0;&#x5C9B;&#x7D20;&#x5206;&#x6CCC;&#x7F3A;&#x9677;&#x6216;&#x5176;&#x751F;&#x7269;&#x4F5C;&#x7528;&#x53D7;&#x635F;&#xFF0C;&#x6216;&#x4E24;&#x8005;&#x517C;&#x6709;&#x5F15;&#x8D77;&#x3002;&#x7CD6;&#x5C3F;&#x75C5;&#x60A3;&#x8005;&#x957F;&#x671F;&#x5B58;&#x5728;&#x7684;&#x9AD8;&#x8840;&#x7CD6;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x5404;&#x79CD;&#x7EC4;&#x7EC7;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x773C;&#x3001;&#x80BE;&#x3001;&#x5FC3;&#x810F;&#x3001;&#x8840;&#x7BA1;&#x3001;&#x795E;&#x7ECF;&#x7684;&#x6162;&#x6027;&#x635F;&#x4F24;&#x548C;&#x529F;&#x80FD;&#x969C;&#x788D;&#x3002;</p><p>&#x73B0;&#x4EE3;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x8868;&#x660E;&#xFF1A;&#x7CD6;&#x5C3F;&#x75C5;&#x5B58;&#x5728;&#x5BB6;&#x65CF;&#x53D1;&#x75C5;&#x503E;&#x5411;&#xFF0C;1/4&#xFF5E;1/2&#x60A3;&#x8005;&#x6709;&#x7CD6;&#x5C3F;&#x75C5;&#x5BB6;&#x65CF;&#x53F2;&#xFF0C;&#x7CD6;&#x5C3F;&#x75C5;&#x7684;&#x53D1;&#x75C5;&#x4E0E;&#x9057;&#x4F20;&#x6709;&#x5F88;&#x5927;&#x5173;&#x7CFB;&#x3002;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x5B58;&#x5728;&#x660E;&#x663E;&#x7684;&#x9057;&#x4F20;&#x7279;&#x6027;&#x4EE5;&#x53CA;&#x5F02;&#x8D28;&#x6027;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x53D1;&#x73B0;&#x591A;&#x79CD;&#x57FA;&#x56E0;&#x7A81;&#x53D8;&#xFF0C;&#x5982;&#x80F0;&#x5C9B;&#x7D20;&#x57FA;&#x56E0;&#x3001;&#x80F0;&#x5C9B;&#x7D20;&#x53D7;&#x4F53;&#x57FA;&#x56E0;&#x3001;&#x8461;&#x8404;&#x7CD6;&#x6FC0;&#x9176;&#x57FA;&#x56E0;&#x3001;&#x7EBF;&#x7C92;&#x4F53;&#x57FA;&#x56E0;&#x7B49;&#xFF0C;&#x4E0E;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x7684;&#x53D1;&#x75C5;&#x76F8;&#x5173;&#x3002;2&#x578B;&#x7CD6;&#x5C3F;&#x75C5;&#x76F8;&#x5173;&#x6613;&#x611F;&#x57FA;&#x56E0;&#x7684;&#x7B5B;&#x67E5;&#x80FD;&#x5E2E;&#x52A9;&#x4E2A;&#x4F53;&#x5145;&#x5206;&#x4E86;&#x89E3;&#x81EA;&#x5DF1;&#x7684;&#x9057;&#x4F20;&#x72B6;&#x51B5;&#xFF0C;&#x63D0;&#x524D;&#x91C7;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x5065;&#x5EB7;&#x7BA1;&#x7406;&#x63AA;&#x65BD;&#xFF0C;&#x80FD;&#x6709;&#x6548;&#x9884;&#x9632;&#x6216;&#x5EF6;&#x7F13;&#x75BE;&#x75C5;&#x7684;&#x53D1;&#x751F;&#x3002;</p>
+        <!-- <p>高血压（hypertension）是指以体循环动脉血压（收缩压和/或舒张压）增高为主要特征（收缩压≥140毫米汞柱，舒张压≥90毫米汞柱），可伴有心、脑、肾等器官的功能或器质性损害的临床综合征。常伴随有头晕耳鸣等，然而在早期往往因为症状不明显或者无明显症状而遭到忽视。</p>
+        <p>现代研究表明：高血压有遗传倾向，基因遗传因素甚至占到30%-50%。有高血压遗传家族史的，其后代患原发性高血压病的机率增加4倍。高血压相关易感基因的筛查能帮助个体了解自己的遗传状况，提前采取措施，能有效预防或延缓疾病的发生。</p> -->
+    </div>
+    <div class="results pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/test_result.png">
+            </div>
+            <div class="main">您的检测结果：</div>
+            <div class="right">
+                <div class="icon">
+                    <img src="./images/pro_warning.png">
+                </div>
+                <div>红色指标需特别注意</div>
+            </div>
+        </div>
+        <table>
+            <tr><td><p>&#x57FA;&#x56E0;&#x68C0;&#x6D4B;&#x4F4D;&#x70B9;</p></td><td><p>&#x53D8;&#x5F02;&#x7C7B;&#x578B;</p></td><td><p>&#x53C2;&#x8003;&#x5E8F;&#x5217;</p></td><td><p>&#x68C0;&#x6D4B;&#x7ED3;&#x679C;</p></td><td><p>&#x53D8;&#x5F02;&#x60C5;&#x51B5;</p></td></tr><tr><td><p>IGF2BP2-rs4402960</p></td><td><p>SNP</p></td><td><p>G</p></td><td><p>G</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>IGF2BP2-rs1470579</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>CDKAL1-rs10946398</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>SLC30A8-rs13266634</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>HHEX-rs1111875</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>FAF1-rs17106184</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>WFS1-rs10010131</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>CDKAL1-rs7756992</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>CDKN2A/2B-rs10811661</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>CDC123-rs12779790</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>HHEX-rs1111875</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>TCF7L2-rs7903146</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>KCNQ1-rs2237895</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>MTNR1B-rs10830963</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr><tr><td><p>IRS1-rs757832</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>&#x672A;&#x89C1;&#x7A81;&#x53D8;</p></td></tr>
+        </table>
+        <!-- <table><tr><td><p>基因检测位点</p></td><td><p>变异类型</p></td><td><p>参考序列</p></td><td><p>检测结果</p></td><td><p>变异情况</p></td></tr><tr><td><p>MOV10 - rs2932538</p></td><td><p>SNP</p></td><td><p>C </p></td><td><p>C </p></td><td><p>未见突变</p></td></tr><tr><td><p>SLC4A7 - rs13082711</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>SLC39A8 - rs13107325</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>GUCY1A3 - rs13139571</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>C5orf23 - rs1173771</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>HFE - rs1799945</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>BAT2 - rs805303</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>CACNB2 - rs4373814</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>A</p></td><td><p>突  变</p></td></tr><tr><td><p>PLCE1 - rs932764</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>ADM - rs7129220</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>FLJ32810 - rs633185</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>FURIN-FES - rs2521501</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>GOSR2 - rs17608766</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>JAG1 - rs1327235</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>GNAS-EDN3 - rs6015450</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>MTHFR - rs17367504</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>ULK4 - rs3774372</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>FGF5 - rs1458038</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>CACNB2 - rs1813353</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>C10orf107 - rs4590817</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>CYP17A1 - rs11191548</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>PLEKHA7 - rs381815</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>ATP2B1 - rs17249754</p></td><td><p>SNP</p></td><td><p>A</p></td><td><p>A</p></td><td><p>未见突变</p></td></tr><tr><td><p>SH2B3 - rs3184504</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>TNX5 - rs10850411</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr><tr><td><p>CYP1A1 - rs1378942</p></td><td><p>SNP</p></td><td><p>G</p></td><td><p>G</p></td><td><p>未见突变</p></td></tr><tr><td><p>ZNF652 - rs12940887</p></td><td><p>SNP</p></td><td><p>C</p></td><td><p>C</p></td><td><p>未见突变</p></td></tr></table> -->
+        <div class="more" onclick="checkMore()">查看更多<img src="./images/see_more.png"></div>
+    </div>
+    <div class="evaluation pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/risk_assessment.png">
+            </div>
+            <div class="main">风险评估：</div>
+        </div>
+        <div class="results-card">
+            <div class="results">
+                <div class="item">
+                    <div class="num">27</div>
+                    <div class="text">检测到的风险位点个数</div>
+                </div>
+                <div class="v-line"></div>
+                <div class="item">
+                    <div class="num">1.6</div>
+                    <div class="text">遗传风险倍数</div>
+                </div>
+            </div>
+            <div class="summary">抗病能力较弱</div>
+        </div> 
+        <div class="summary-text">您的检测结果显示您的抗病能力较弱(遗传风险倍数大于等于1.5)，遗传风险较高，建议您定期接受正规体检机构或正规医院的检查和咨询，做好预防措施。</div>
+        <div class="remark">
+            <div class="title">
+                <div class="icon">
+                    <img src="./images/report_note.png">
+                </div>
+                <div class="main">备注</div>
+            </div>
+            <div class="content pra">
+                <p>遗传风险高不代表一定会患该疾病，因为疾病的发生除了受遗传因素的影响外，与环境和生活方式等多种因素密切相关。遗传风险高是在提醒我们应改善生活习惯，合理饮食和运动，避免高危因素，有效预防疾病的发生。</p>
+                <p>遗传风险倍数是从基因遗传角度解释疾病风险，与遗传患病风险成正相关。</p>
+            </div> 
+        </div>
+        <div class="risk">
+            <div class="table-name">遗传风险倍数与基因遗传风险关系表</div>
+            <table>
+                <tr>
+                    <th>遗传风险倍数</th>
+                    <th>结论</th>
+                </tr>
+                <tr>
+                    <td>= 1</td>
+                    <td>基因遗传风险趋近于零</td>
+                </tr>
+                <tr>
+                    <td>1 ~ 1.5</td>
+                    <td>携带有突变风险基因，但遗传风险较低</td>
+                </tr>
+                <tr>
+                    <td>≥ 1.5</td>
+                    <td>遗传风险较大</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="advice pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/health_care.png">
+            </div>
+            <div class="main">预防保健建议：</div>
+        </div>
+        <div class="title-1">
+                一、健康计划
+        </div>
+        <div class="title-2">1.饮食</div>
+        <p>合理膳食，荤素搭配，避免长期高脂肪高蛋白的过量摄入，从而引发肥胖。</p>
+        <p>a. 限制钠盐。控制食盐的摄入能防治高血压病，一般主张每日用盐控制在5g以下，最好是3g，即食物中有轻度咸味即可。限制腌熏食品(包括咸肉、咸鱼、咸菜、酱菜等)和味精含钠高的调料，及加碱或发酵粉、小苏打制成的面食、糕点等。 </p>
+        <p>b. 选用优质的蛋白质食物。可适当吃些鱼类和大豆及其豆制品。鱼类蛋白质含丰富的蛋氨酸和牛磺酸、能影响血压的调节作用，使尿内钠排出量提高，能抑制钠盐对血压的影响，可预防中风。同时鱼类的脂肪，含高级多不饱和脂肪酸，有降低血胆固醇作用，能预防血栓形成。大豆对心血管病有很好的保护作用，虽无降压作用，但也有防止中风和降血胆固醇的作用。</p>
+        <p>c. 多选用含钾、镁、碘和锌高的食物。有降压和保护心脏和预防动脉粥样硬化的功能。含钾高的食物：柑橘、苹果、杏、红枣、葡萄、花椰菜、大豆、黑豆、菠菜、土豆等。家禽类、鱼和瘦肉含钾量也高。含镁高的食物：各种干豆类及鲜豆、苋菜、桂圆、豆芽等。含碘高的食物：海产品类、海带、紫菜等。</p>
+        <div class="title-2">2.尽量减少喝酒</div>
+        <p>预防高血压，最好减少饮酒；有饮酒习惯者，应戒酒或尽量少饮酒(＜50m1/d)。过量的酗酒可能导致高血压的发生，饮酒使心率增快，血管收缩，血压升高，情绪激动，引发脑出血。平时泡些罗布麻，决明子、蕃楸草、箐橡草，可以软化血管，调理血压。</p>
+        <div class="title-2">3.时常关注血压</div>
+        <p>定期做血压的检查，经常量血压以预防高血压跟及时控制高血压。</p>
+        <div class="title-2">4.避免肥胖</div>
+        <p>控制好体重，可做适量运动，如体操、散步、伸腰等，须持续不断使其维持在理想体重范围内。适当增加有氧运动。有研究指出，体力活动少者发生高血压的危险是体力活动多者的1.52倍。</p>
+        <div class="title-2">5.戒烟</div>
+        <p>烟草中的有害成分可使血管痉挛收缩、血压升高，还能使血小板聚集形成<a href="http://www.baike.com/sowiki/æ å¡?prd=content_doc_search&quot; \t &quot;_blank&quot; \o &quot;栓塞">栓塞</a>，从而导致冠心病、心绞痛甚至心肌梗塞的发生。</p>
+        <div class="title-2">6.足够睡眠</div>
+        <p>要保持心情愉快。要有充份的睡眠与休息，不要焦躁激动。</p>
+        <div class="title-2">7.保持良好心态</div>
+        <p>日常家庭、工作等问题带来的心理压力与高血压及心血管病的危险性升高有关，因此应正确对待及设法缓解各种心理压力。保持轻松的心情，情绪上要做到不急不躁，心平气和，有助于预防跟降低高血压。</p>
+        <div class="title-1">
+                二、适当的营养品和保健品
+        </div>
+        <p>叶酸不足会导致体内同型半胱氨酸堆积（日常饮食会产生），同型半胱氨酸具有微毒性，会导致血管老化，长期堆积容易造成损伤，造成H型高血压（占原发性高血压的75%以上），加重疾病症状。可适当补充叶酸。</p>
+    </div>
+    <div class="regarding pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/report_about.png">
+            </div>
+            <div class="main">关于高血压：</div>
+        </div>
+        <div class="title-1">一、什么是高血压</div>
+        <p>高血压是持续血压过高的疾病，会引起<a href="https://baike.so.com/doc/3745546.html&quot; \t &quot;_blank">中风</a>、<a href="https://baike.so.com/doc/5355450.html&quot; \t &quot;_blank">心脏病</a>、<a href="https://baike.so.com/doc/5341150.html&quot; \t &quot;_blank">血管瘤</a>、<a href="https://baike.so.com/doc/2254099.html&quot; \t &quot;_blank">肾衰竭</a>等疾病，高血压是一种以动脉压升高为特征，可伴有心脏、血管、脑和肾脏等器官功能性或器质性改变的全身性疾病，它有原发性高血压和继发性高血压之分。高血压发病的原因很多，可分为遗传和环境两个方面。在未用抗高血压药情况下，收缩压≥139<a href="https://baike.so.com/doc/6838206.html&quot; \t &quot;_blank">mmHg</a>和/或舒张压≥89mmHg，按血压水平将高血压分为1，2，3级。收缩压≥140mmHg和舒张压&lt;90mmHg单列为单纯性收缩期高血压。患者既往有高血压史，目前正在用抗高血压药，血压虽然低于140/90mmHg，亦应该诊断为高血压。</p>
+        <div class="title-1">一、高血压的风险因素</div>
+        <div class="title-2">1、遗传因素</div>
+        <p>根据用户研究分析，有家族史的人患高血压的风险是没有家族史的人患病几率的4倍以上。</p>
+        <div class="title-2">2、其他疾病的影响</div>
+        <p>根据用户研究分析，已患高血脂、糖尿病的人群患高血压的风险是正常人的的5.8倍以上。若患有高甘油三酯血症、2型糖尿病或提示遗传风险高，则会导致高血压风险升高。</p>
+        <div class="title-2">3、肥胖</div>
+        <p>根据用户研究分析，患高血压的概率会随着BMI指数的升高而升高。超重（BMI＞25）肥胖会导致血脂偏高，从而增加血管阻力升高血压。</p>
+        <div class="title-2">4、饮酒</div>
+        <p>根据用户研究分析，饮酒的人患高血压的风险是不饮酒人的1.2倍以上。</p>
+        <div class="title-2">5、膳食</div>
+        <p>钠盐摄入过量。根据用户研究分析，饮食偏咸的人患高血压的风险是正常人的1.9倍以上。盐摄入过量，会造成血液中的钠偏高，造成血液容量变大、血管阻力增加，容易引发高血压。</p>
+        <p>钾盐摄入不足。如果饮食中钾不足，很可能导致血液中钠盐过量诱发高血压。</p>
+        <div class="title-2">6、睡眠不足</div>
+        <p>根据用户研究分析，平均睡眠时间小于6小时的人患高血压的风险是正常睡眠时长人的2.4倍以上。睡眠不足会导致心率加速，交感神经系统兴奋，导致血流量增加、血管收缩加快、引发高血压。</p>
+        <div class="title-2">7、噪音</div>
+        <p>根据用户研究分析，长期处在嘈杂的生活环境中的人患高血压的风险是正常人的2.5倍以上。</p>
+        <div class="title-2">8、压力</div>
+        <p>根据用户研究分析，压力较大的人患高血压的风险是压力较小人的3倍以上。</p>
+        <div class="title-1">三、高血压的临床表现</div>
+        <p>高血压的症状因人而异。早期可能无症状或症状不明显，常见的是头晕、头痛、颈项板紧、疲劳、心悸等。仅仅会在劳累、精神紧张、情绪波动后发生血压升高，并在休息后恢复正常。随着病程延长，血压明显的持续升高，逐渐会出现各种症状。此时被称为缓进型高血压病。缓进型高血压病常见的临床症状有头痛、头晕、注意力不集中、记忆力减退、肢体麻木、夜尿增多、心悸、胸闷、乏力等。高血压的症状与血压水平有一定关联，多数症状在紧张或劳累后可加重，清晨活动后血压可迅速升高，出现清晨高血压，导致心脑血管事件多发生在清晨。</p>
+        <p>当血压突然升高到一定程度时甚至会出现剧烈头痛、呕吐、心悸、眩晕等症状，严重时会发生神志不清、抽搐，这就属于急进型高血压和高血压危重症，多会在短期内发生严重的心、脑、肾等器官的损害和病变，如中风、心梗、肾衰等。症状与血压升高的水平并无一致的关系。</p>
+        <p>继发性高血压的临床表现主要是有关原发病的症状和体征，高血压仅是其症状之一。继发性高血压患者的血压升高可具有其自身特点，如主动脉缩窄所致的高血压可仅限于上肢；嗜铬细胞瘤引起的血压增高呈阵发性。</p>
+        <div class="title-1">四、高血压的诊断与检查</div>
+        <div class="title-2">1.诊断</div>
+        <div class="diagnosis">
+            <div class="table-name">世界卫生组织(WHO)建议使用的成人血压标准</div>
+            <table>
+                <tr>
+                    <th>收缩压</th>
+                    <th>舒张压</th>
+                    <th>结论</th>
+                </tr>
+                <tr>
+                    <td>≤ 140mmHg (18.6kPa)</td>
+                    <td>≤ 90mmHg(12kPa)</td>
+                    <td>正常</td>
+                </tr>
+                <tr>
+                    <td>141 ~ 159mmHg 
+                            (18.9-21.2kPa)</td>
+                    <td>91~ 94mmHg
+                            (12.1-12.5kPa)</td>
+                    <td>临界高血压</td>
+                </tr>
+            </table>
+        </div>
+        <p>诊断高血压时，必须多次测量血压，至少有连续两次舒张压的平均值在90mmHg(12.0kPa)或以上才能确诊为高血压。仅一次血压升高者尚不能确诊，但需随访观察。</p>
+        <div class="diagnosis">
+            <div class="table-name">高血压分期</div>
+            <table class="vertical">
+                <tr>
+                    <td style="width: .8rem;">第一期</td>
+                    <td>血压达确诊高血压水平，临床无心，脑，肾损害征象。</td>
+                </tr>
+                <tr>
+                    <td>第二期</td>
+                    <td>
+                        血压达确诊高血压水平，并有下列一项者
+                        <ul>
+                            <li>体检，X线，心电图或超声心动图示左心室扩大；</li>
+                            <li>眼底检查，眼底动脉普遍或局部狭窄；</li>
+                            <li>蛋白尿或血浆肌酐浓度轻度增高。</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>第三期</td>
+                    <td>
+                        血压达确诊高血压水平，并有下列一项者
+                        <ul>
+                            <li>体检，X线，心电图或超声心动图示左心室扩大；</li>
+                            <li>眼底检查，眼底动脉普遍或局部狭窄；</li>
+                            <li>蛋白尿或血浆肌酐浓度轻度增高。</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="title-2">2.检查</div>
+        <ul class="title-3">
+            <li>体格检查</li>
+        </ul>
+        <p>1）正确测量血压。由于血压有波动性，且情绪激动、体力活动时会引起一时性的血压升高，因此应至少2次在非同日静息状态下测得血压升高时方可诊断高血压，而血压值应以连续测量3次的平均值计。仔细的体格检查有助于发现继发性高血压线索和靶器官损害情况</p>
+        <p>2）测量体重指数（BMI）、腰围及臀围。</p>
+        <p>3）检查四肢动脉搏动和神经系统体征，听诊颈动脉、胸主动脉、腹部动脉和股动脉有无杂音。</p>
+        <p>4）观察有无库欣病面容、神经纤维瘤性皮肤斑、甲状腺功能亢进性突眼征或下肢水肿。</p>
+        <p>5）全面的心肺检查。</p>
+        <p>6）全面详细了解患者病史。</p>
+        <ul class="title-3">
+            <li>实验室检查</li>
+        </ul>
+        <p>可帮助判断高血压的病因及靶器官功能状态。常规检查项目有血常规、尿常规（包括蛋白、糖和尿沉渣镜检）、肾功能、血糖、血脂、血钾、超声心动图、心电图、胸部X线、眼底、动态血压监测等。</p>
+        <p>可根据需要和条件进一步检查眼底以及颈动脉超声等。24小时动态血压监测有助于判断血压升高的严重程度，了解血压昼夜节律，监测清晨血压，指导降压治疗以及评价降压药物疗效。</p>
+        <div class="title-1">五、高血压的并发症</div>
+        <p>在我国，高血压病最常见的并发症是脑血管意外，其次是高血压性心脏病心力衰竭，再是肾功能衰竭，在临床表现一节中已描述。较少见但严重的并发症为主动脉夹层动脉瘤。其起病常突然，迅速发生剧烈胸痛，向背或腹部放射，伴有主动脉分支堵塞的现象，使两上肢血压及脉搏有明显差别，一侧从颈动脉到股动脉的脉搏均消失或下肢暂时性瘫痪或偏瘫。少数发生主动脉瓣关闭不全。未受堵塞的动脉血压升高。动脉瘤可破裂入心包或胸膜腔而迅速死亡。胸部X线检查可见主动脉明显增宽。超声心动图计算机化X线或磁共振断层显象检查可直接显示主动脉的夹层或范围，甚至可发现破口。主动脉造影也可确立诊断。高血压合并下肢动脉粥样硬化时，可造成下肢疼痛、跛行。</p>
+        <p>高血压危象：是高血压患者并发的一种极其危急的症候，常在不良诱因影响下，血压骤然升到26.6/16千帕(200/120毫米汞柱)以上，出现心、脑、肾的急性损害危急症候。</p>
+        <p>高血压性视网膜病变：是指全身动脉血压持续性升高，造成血-视网膜屏障破坏、血浆渗漏、血管内有形成分渗出，产生视网膜水肿、出血、缺血或渗出斑等病变，严重者可出现视网膜脱离。</p>
+
+    </div>
+    <div class="literature">
+        <div class="name">参考文献</div>
+        <div class="content">
+            <div class="mui-ellipsis-3">
+                    <ol><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21963141">Genetic variations in CYP17A1, CACNB2 and PLEKHA7 are associated with blood pressure and/orhypertension&nbsp;in She ethnic minority of China.</a> Lin Y, Lai X, Chen B, Xu Y, Huang B, Chen Z, Zhu S, Yao J, Jiang Q, Huang H, Wen J, Chen G. Atherosclerosis. 2011 Dec;219(2):709-14.</li><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21462849">Genetics of&nbsp;hypertension. Current status.</a> Butler MG. J Med Liban. 2010 Jul-Sep;58(3):175-8. Review.</li><li>Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Ehret%20GB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Ehret GB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Munroe%20PB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Munroe PB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Rice%20KM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Rice KM</a>,etc. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21909115&quot; \o &quot;Nature.">Nature.</a>&nbsp;2011 Sep 11;478(7367):103-9.&nbsp;</li><li>Is&nbsp;There&nbsp;a&nbsp;Role&nbsp;for&nbsp;Genomics&nbsp;in&nbsp;the&nbsp;Management&nbsp;of Hypertension? <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Burrello%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Burrello J</a>1,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Monticone%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Monticone S</a>2,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Buffolo%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Buffolo F</a>3,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Tetti%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Tetti M</a>4,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Veglio%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Veglio F</a>5,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Williams%20TA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Williams TA</a>6,7,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Mulatero%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Mulatero P</a>8. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Is+There+a+Role+for+Genomics+in+the+Management+ofHypertension%3F&quot; \o &quot;International journal of molecular sciences.">Int J Mol Sci.</a>&nbsp;2017 May 26;18(6). </li></ol>
+                <!-- <ol><li>Genetic variations in CYP17A1, CACNB2 and PLEKHA7 are associated with blood pressure and/orhypertension&nbsp;in She ethnic minority of China. Lin Y, Lai X, Chen B, Xu Y, Huang B, Chen Z, Zhu S, Yao J, Jiang Q, Huang H, Wen J, Chen G. Atherosclerosis. 2011 Dec;219(2):709-14.</li><li>Genetics of&nbsp;hypertension. Current status. Butler MG. J Med Liban. 2010 Jul-Sep;58(3):175-8. Review.</li><li>Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk. Ehret GB,&nbsp;Munroe PB,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Rice%20KM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Rice KM</a>,etc. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21909115&quot; \o &quot;Nature.">Nature.</a>&nbsp;2011 Sep 11;478(7367):103-9.&nbsp;</li><li>Is&nbsp;There&nbsp;a&nbsp;Role&nbsp;for&nbsp;Genomics&nbsp;in&nbsp;the&nbsp;Management&nbsp;of Hypertension?Burrello J1,&nbsp;Monticone S2,&nbsp;Buffolo F3,&nbsp;Tetti M4,&nbsp;Veglio F5,&nbsp;Williams TA6,7,&nbsp;Mulatero P Int J Mol Sci.&nbsp;2017 May 26;18(6). </li></ol> -->
+            </div>
+            <div class="inner-btn">...更多</div>
+        </div>
+    </div>
+    <div class="links pra">
+        <div class="title">
+            <div class="icon">
+                <img src="./images/more_test.png">
+            </div>
+            <div class="main">更多基因检测：</div>
+        </div>
+        <div class="classification">
+            <div class="name">儿童系列</div>
+        </div>
+        <div class="classification-wrap">
+            <div class="item">
+                <div class="content">
+                    <div class="mian">遗传性近视易感基因检测</div>
+                    <div class="sub">MyopiaWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">遗传性耳聋基因检测</div>
+                    <div class="sub">HearingWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">儿童安全用药基因检测</div>
+                    <div class="sub">KidsWK®Drug</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">儿童铂金套餐</div>
+                    <div class="sub">GenomekidsWK®</div>
+                </div>
+            </div>
+        </div>
+        <div class="classification">
+            <div class="name">遗传特征系列</div>
+        </div>
+        <div class="classification-wrap">
+            <div class="item">
+                <div class="content">
+                    <div class="mian">酒精代谢基因检测</div>
+                    <div class="sub">Alcohol WK®</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">叶酸利用能力基因检测</div>
+                    <div class="sub">Folate WK®</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">遗传特征基因检测</div>
+                    <div class="sub">Hereditary FeatureWK®</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">皮肤健康基因检测</div>
+                    <div class="sub">SkinWK®</div>
+                </div>
+            </div>
+        </div>
+        <div class="classification">
+            <div class="name">肿瘤系列</div>
+        </div>
+        <div class="classification-wrap">
+            <div class="item">
+                <div class="content">
+                    <div class="mian">肝癌易感基因检测</div>
+                    <div class="sub">LiverWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">肺癌易感基因检测</div>
+                    <div class="sub">LungWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">胃癌易感基因检测</div>
+                    <div class="sub">GastricWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">结肠直肠癌易感基因检测</div>
+                    <div class="sub">ColorectalWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">女性三项肿瘤易感基因检测</div>
+                    <div class="sub">FemaleTumorsWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">肿瘤易感基因检测</div>
+                    <div class="sub">OncoFemaleKW®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">肿瘤易感基因检测</div>
+                    <div class="sub">OncoMaleKW®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">成人铂金套餐</div>
+                    <div class="sub">GenomeWK®Risk</div>
+                </div>
+            </div>
+        </div>
+        <div class="classification">
+            <div class="name">慢性病系列</div>
+        </div>
+        <div class="classification-wrap">
+            <div class="item">
+                <div class="content">
+                    <div class="mian">心血管个性化用药基因检测</div>
+                    <div class="sub">CardioWK®Drug</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">心血管疾病易感基因检测</div>
+                    <div class="sub">CardioWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">糖尿病易感基因检测</div>
+                    <div class="sub">DiabeteWK®Drug</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">糖尿病个性化用药基因检测</div>
+                    <div class="sub">DiabeteWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">阿尔茨海默病易感基因检测</div>
+                    <div class="sub">AlzheimerWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">帕金森易感基因检测</div>
+                    <div class="sub">ParkinsonWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">骨质疏松易感基因检测</div>
+                    <div class="sub">OsteoporosisWK®Risk</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="mian">成人安全用药</div>
+                    <div class="sub">AdultsWK®Drug</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+        });
+        $(function(){
+            var trList = $('.results table tr')
+            if(trList.length>4){
+                $('.results .more').show()
+                for (let index = 0; index < trList.length; index++) {
+                    const element = trList[index];
+                    if(index>4) $(element).hide();
+                }
+            }else{
+                $('.results .more').hide()
+            }
+            $(".inner-btn").click(function(){
+                $(".literature .content").children(0).removeClass('mui-ellipsis-3');
+                $(".literature .inner-btn").hide();
+            })
+            $("a").click(function(e){
+                // e.stopPropagation();
+                e.preventDefault()
+            })
+        })
+        function checkMore(){
+            $('.results .more').hide()
+            var trList = $('.results table tr')
+            for (let index = 0; index < trList.length; index++) {
+                const element = trList[index];
+                $(element).show();
+            }
+        }
+    </script>
+</body>
+
+</html>
