@@ -479,7 +479,9 @@ body {
     font-size: .24rem;
 }
 .food{
-    width: 1.35rem;
+    display: inline-block;
+    line-height: .4rem;
+    padding: 0 .15rem;
     border: .01rem solid #01b301;
     text-align: center;
     border-radius: .06rem;

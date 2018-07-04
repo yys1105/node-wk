@@ -98,14 +98,22 @@ fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' },
                     return children.slice(startIndex+1,endIndex)
                 }
                 var replaceHtml = (str) => {
-                    if(/^<p>[一二三四五六七八九十]+[.|、]/.test(escaper.unescape($.html(str)))){
+                    if(/^<p>\s*[一二三四五六七八九十]+[\.|、]/.test(escaper.unescape($.html(str)))){
                         return '<div class="title-1">'+$(str).text()+'</div>'
-                    }else if(/^<p>[1-9][0-9]*[.|、]/.test(escaper.unescape($.html(str)))){
+                    }else if(/^<p>.*?>\d+[\.|、]/.test(escaper.unescape($.html(str)))){
                         return '<div class="title-2">'+$(str).text()+'</div>'
                     }else if(/★★适宜饮食/.test(escaper.unescape($.html(str)))){
                         return '<div class="food">适宜饮食</div>'
                     }else if(/禁忌饮食/.test(escaper.unescape($.html(str)))){
                         return '<div class="food err">禁忌饮食</div>'
+                    }else if(/★★适宜运动/.test(escaper.unescape($.html(str)))){
+                        return '<div class="food">适宜运动</div>'
+                    }else if(/★★/.test(escaper.unescape($.html(str)))){
+                        return '<div class="food">'+$(str).text()+'</div>'
+                    }else if(str.name=='ol'){
+                        return '<ul class="title-3"><li>'+$(str).text()+'</li></ul>'
+                    }else if(str.name=='ol'){
+                        return '<ul class="title-3"><li>'+$(str).text()+'</li></ul>'
                     }else{
                         return $.html(str)
                     }
