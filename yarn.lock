@@ -20,6 +20,10 @@ boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
+char-buffer@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/char-buffer/download/char-buffer-1.0.1.tgz#30376135d2a0d4c8bc26b912c3f85c7fdf494669"
+
 cheerio@^1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
@@ -122,6 +126,10 @@ jszip@~2.5.0:
   dependencies:
     pako "~0.2.5"
 
+lodash.uniq@^4.5.0:
+  version "4.5.0"
+  resolved "http://registry.npm.taobao.org/lodash.uniq/download/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
+
 lodash@^3.5.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
@@ -154,6 +162,10 @@ mammoth@^1.4.6:
 mime@^2.3.1:
   version "2.3.1"
   resolved "http://registry.npm.taobao.org/mime/download/mime-2.3.1.tgz#b1621c54d63b97c47d3cfe7f7215f7d64517c369"
+
+node-escapist@^0.1.1-f:
+  version "0.1.1-f"
+  resolved "http://registry.npm.taobao.org/node-escapist/download/node-escapist-0.1.1-f.tgz#d0f8abd4afa77af356267f58e3345b78b8720c7c"
 
 nth-check@~1.0.1:
   version "1.0.1"
@@ -216,6 +228,14 @@ string_decoder@~1.1.1:
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
   dependencies:
     safe-buffer "~5.1.0"
+
+"true-html-escape@^1.0.0":
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/true-html-escape/download/true-html-escape-1.0.0.tgz#4595e802a718794d89a17e81dac313d14c68d3ee"
+  dependencies:
+    char-buffer "^1.0.1"
+    lodash.uniq "^4.5.0"
+    node-escapist "^0.1.1-f"
 
 underscore@~1.4.4:
   version "1.4.4"

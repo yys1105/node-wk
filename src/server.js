@@ -8,9 +8,9 @@ var server = http.createServer(function(request, response){
     //获取输入的url解析后的对象
     var pathObj = url.parse(request.url, true);
     //static文件夹的绝对路径
-    var staticPath = path.resolve(__dirname, 'template')
+    var staticPath = path.resolve(__dirname, 'output')
     //获取资源文件绝对路径
-    var filePath = path.join(staticPath, pathObj.pathname)
+    var filePath = path.join(staticPath, decodeURIComponent(pathObj.pathname));
     //异步读取file
 
     fs.readFile(filePath, function(err, fileContent){
@@ -28,6 +28,6 @@ var server = http.createServer(function(request, response){
 
 exports.create = function(){
     server.listen(8080)
-    console.log('visit http://localhost:8080/demo.html')
-    open('http://localhost:8080/demo.html', "chrome")
+    console.log('visit http://localhost:8080/')
+    open('http://localhost:8080/', "chrome")
 };

@@ -3,6 +3,7 @@ const mommoth = require("mammoth")
 const cheerio = require('cheerio')
 const path = require('path');
 const server = require('./server')
+const escaper = require("true-html-escape");
 
 fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' }, (err, data) => {
     if (err) throw err;
@@ -21,6 +22,7 @@ fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' },
                     outFileName = doc.replace('.docx', ''),
                     $ = cheerio.load(`<div id='root'>${docHtml}</div>`),
                     children = $('#root')[0].children;
+                // 查找中间内容，返回字符串
                 htmlBetween = (first, last) => {
                     let html = null
                     for (let i = 0; i < children.length; i++) {
@@ -33,6 +35,19 @@ fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' },
                             return html;
                         }
                     }
+                }
+                htmlToArr = (start, end) => {
+                    let startIndex = 0,
+                    endIndex = 0;
+                    for (let i = 0; i < children.length; i++) {
+                        if ($(children[i]).text() == start) {
+                            startIndex = i
+                        }
+                        if ($(children[i]).text() == end) {
+                            endIndex = i
+                        }
+                    }
+                    return children.slice(startIndex+1,endIndex)
                 }
                 // 生成临时html文件
                 fs.writeFile(__dirname + '/temporary/' + outFileName + '-临时.html', momRes.value, [], (err) => {
@@ -63,13 +78,85 @@ fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' },
                                 trStr += $.html(tr)
                             }
                         }
-                        console.log(trStr);
-                        console.log($(trStr));
-                        
                         templateHtml = templateHtml.replace('{{resTable}}', $.html($(trStr)));
                     }
                 })
+                
+                // 替换预防保健建议
+                var getProposalArr = () => {
+                    let startIndex = 0,
+                    endIndex = 0;
+                    for (let i = 0; i < children.length; i++) {
+                        if ($(children[i]).text() == '预防保健建议') {
+                            startIndex = i
+                        }
+                        if (/^关于/.test($(children[i]).text())) {
+                            endIndex = i
+                        }
+                    }
+                    return children.slice(startIndex+1,endIndex)
+                }
+                var replaceHtml = (str) => {
+                    if(/^<p>[一二三四五六七八九十]+[.|、]/.test(escaper.unescape($.html(str)))){
+                        return '<div class="title-1">'+$(str).text()+'</div>'
+                    }else if(/^<p>[1-9][0-9]*[.|、]/.test(escaper.unescape($.html(str)))){
+                        return '<div class="title-2">'+$(str).text()+'</div>'
+                    }else if(/★★适宜饮食/.test(escaper.unescape($.html(str)))){
+                        return '<div class="food">适宜饮食</div>'
+                    }else if(/禁忌饮食/.test(escaper.unescape($.html(str)))){
+                        return '<div class="food err">禁忌饮食</div>'
+                    }else{
+                        return $.html(str)
+                    }
+                }
+                var getProposal = () => {
+                    var proposalArr = getProposalArr()
+                    var html = ''
+                    for (let i = 0; i < proposalArr.length; i++) {
+                        const el = proposalArr[i];
+                        html += replaceHtml(el)
+                    }
+                    return html
+                }
+                let proposal = getProposal()
+                templateHtml = templateHtml.replace('{{proposal}}', $.html($(proposal)));
 
+                // 替换关于疾病
+                for (let i = 0; i < children.length; i++) {
+                    if(/^关于/.test($(children[i]).text())){
+                        let aboutName = $(children[i]).text()
+                        templateHtml = templateHtml.replace('{{aboutName}}', aboutName);
+                    }
+                }
+                var getAboutArr = () => {
+                    let startIndex = 0,
+                    endIndex = 0;
+                    for (let i = 0; i < children.length; i++) {
+                        if ($(children[i]).text() == '重要科学依据') {
+                            endIndex = i
+                        }
+                        if (/^关于/.test($(children[i]).text())) {
+                            startIndex = i
+                        }
+                    }
+                    return children.slice(startIndex+1,endIndex)
+                }
+                var getAbout = () => {
+                    var aboutArr = getAboutArr()
+                    var html = ''
+                    for (let i = 0; i < aboutArr.length; i++) {
+                        const el = aboutArr[i];
+                        html += replaceHtml(el)
+                    }
+                    return html
+                }
+                let about = getAbout()
+                templateHtml = templateHtml.replace('{{about}}', $.html($(about)));
+
+                // 替换文献
+                let literature = htmlBetween('重要科学依据', '温馨提示')
+                templateHtml = templateHtml.replace('{{literature}}', $.html($(literature)));
+                
 
                 // 替换内容后的字符串写入文件 templateHtml
                 fs.writeFile(__dirname + '/output/' + outFileName + '.html', templateHtml, [], (err) => {
@@ -82,7 +169,7 @@ fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' },
             }).done()
         })
     })
-
+    // server.create();
 
     // fs.writeFile(__dirname + '/output/test.html', data, [], (err) => {
     //     if (err) throw err;

@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>检测报告</title>
+    <title>{{name}}检测报告</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.0/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/main.css?v=1.2">
     <script src="./js/lib-flexible.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
 </head>
 
 <body>
@@ -279,11 +279,13 @@
             </div>
             <div class="main">预防保健建议：</div>
         </div>
-        <div class="title-1">
+        {{proposal}}
+        <!-- <div class="title-1">
                 一、健康计划
         </div>
         <div class="title-2">1.饮食</div>
         <p>合理膳食，荤素搭配，避免长期高脂肪高蛋白的过量摄入，从而引发肥胖。</p>
+        <div class="food suitable">适宜饮食</div>
         <p>a. 限制钠盐。控制食盐的摄入能防治高血压病，一般主张每日用盐控制在5g以下，最好是3g，即食物中有轻度咸味即可。限制腌熏食品(包括咸肉、咸鱼、咸菜、酱菜等)和味精含钠高的调料，及加碱或发酵粉、小苏打制成的面食、糕点等。 </p>
         <p>b. 选用优质的蛋白质食物。可适当吃些鱼类和大豆及其豆制品。鱼类蛋白质含丰富的蛋氨酸和牛磺酸、能影响血压的调节作用，使尿内钠排出量提高，能抑制钠盐对血压的影响，可预防中风。同时鱼类的脂肪，含高级多不饱和脂肪酸，有降低血胆固醇作用，能预防血栓形成。大豆对心血管病有很好的保护作用，虽无降压作用，但也有防止中风和降血胆固醇的作用。</p>
         <p>c. 多选用含钾、镁、碘和锌高的食物。有降压和保护心脏和预防动脉粥样硬化的功能。含钾高的食物：柑橘、苹果、杏、红枣、葡萄、花椰菜、大豆、黑豆、菠菜、土豆等。家禽类、鱼和瘦肉含钾量也高。含镁高的食物：各种干豆类及鲜豆、苋菜、桂圆、豆芽等。含碘高的食物：海产品类、海带、紫菜等。</p>
@@ -302,16 +304,17 @@
         <div class="title-1">
                 二、适当的营养品和保健品
         </div>
-        <p>叶酸不足会导致体内同型半胱氨酸堆积（日常饮食会产生），同型半胱氨酸具有微毒性，会导致血管老化，长期堆积容易造成损伤，造成H型高血压（占原发性高血压的75%以上），加重疾病症状。可适当补充叶酸。</p>
+        <p>叶酸不足会导致体内同型半胱氨酸堆积（日常饮食会产生），同型半胱氨酸具有微毒性，会导致血管老化，长期堆积容易造成损伤，造成H型高血压（占原发性高血压的75%以上），加重疾病症状。可适当补充叶酸。</p> -->
     </div>
     <div class="regarding pra">
         <div class="title">
             <div class="icon">
                 <img src="./images/report_about.png">
             </div>
-            <div class="main">关于高血压：</div>
+            <div class="main">{{aboutName}}</div>
         </div>
-        <div class="title-1">一、什么是高血压</div>
+        {{about}}
+        <!-- <div class="title-1">一、什么是高血压</div>
         <p>高血压是持续血压过高的疾病，会引起<a href="https://baike.so.com/doc/3745546.html&quot; \t &quot;_blank">中风</a>、<a href="https://baike.so.com/doc/5355450.html&quot; \t &quot;_blank">心脏病</a>、<a href="https://baike.so.com/doc/5341150.html&quot; \t &quot;_blank">血管瘤</a>、<a href="https://baike.so.com/doc/2254099.html&quot; \t &quot;_blank">肾衰竭</a>等疾病，高血压是一种以动脉压升高为特征，可伴有心脏、血管、脑和肾脏等器官功能性或器质性改变的全身性疾病，它有原发性高血压和继发性高血压之分。高血压发病的原因很多，可分为遗传和环境两个方面。在未用抗高血压药情况下，收缩压≥139<a href="https://baike.so.com/doc/6838206.html&quot; \t &quot;_blank">mmHg</a>和/或舒张压≥89mmHg，按血压水平将高血压分为1，2，3级。收缩压≥140mmHg和舒张压&lt;90mmHg单列为单纯性收缩期高血压。患者既往有高血压史，目前正在用抗高血压药，血压虽然低于140/90mmHg，亦应该诊断为高血压。</p>
         <div class="title-1">一、高血压的风险因素</div>
         <div class="title-2">1、遗传因素</div>
@@ -409,14 +412,15 @@
         <div class="title-1">五、高血压的并发症</div>
         <p>在我国，高血压病最常见的并发症是脑血管意外，其次是高血压性心脏病心力衰竭，再是肾功能衰竭，在临床表现一节中已描述。较少见但严重的并发症为主动脉夹层动脉瘤。其起病常突然，迅速发生剧烈胸痛，向背或腹部放射，伴有主动脉分支堵塞的现象，使两上肢血压及脉搏有明显差别，一侧从颈动脉到股动脉的脉搏均消失或下肢暂时性瘫痪或偏瘫。少数发生主动脉瓣关闭不全。未受堵塞的动脉血压升高。动脉瘤可破裂入心包或胸膜腔而迅速死亡。胸部X线检查可见主动脉明显增宽。超声心动图计算机化X线或磁共振断层显象检查可直接显示主动脉的夹层或范围，甚至可发现破口。主动脉造影也可确立诊断。高血压合并下肢动脉粥样硬化时，可造成下肢疼痛、跛行。</p>
         <p>高血压危象：是高血压患者并发的一种极其危急的症候，常在不良诱因影响下，血压骤然升到26.6/16千帕(200/120毫米汞柱)以上，出现心、脑、肾的急性损害危急症候。</p>
-        <p>高血压性视网膜病变：是指全身动脉血压持续性升高，造成血-视网膜屏障破坏、血浆渗漏、血管内有形成分渗出，产生视网膜水肿、出血、缺血或渗出斑等病变，严重者可出现视网膜脱离。</p>
+        <p>高血压性视网膜病变：是指全身动脉血压持续性升高，造成血-视网膜屏障破坏、血浆渗漏、血管内有形成分渗出，产生视网膜水肿、出血、缺血或渗出斑等病变，严重者可出现视网膜脱离。</p> -->
 
     </div>
     <div class="literature">
         <div class="name">参考文献</div>
         <div class="content">
             <div class="mui-ellipsis-3">
-                    <ol><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21963141">Genetic variations in CYP17A1, CACNB2 and PLEKHA7 are associated with blood pressure and/orhypertension&nbsp;in She ethnic minority of China.</a> Lin Y, Lai X, Chen B, Xu Y, Huang B, Chen Z, Zhu S, Yao J, Jiang Q, Huang H, Wen J, Chen G. Atherosclerosis. 2011 Dec;219(2):709-14.</li><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21462849">Genetics of&nbsp;hypertension. Current status.</a> Butler MG. J Med Liban. 2010 Jul-Sep;58(3):175-8. Review.</li><li>Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Ehret%20GB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Ehret GB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Munroe%20PB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Munroe PB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Rice%20KM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Rice KM</a>,etc. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21909115&quot; \o &quot;Nature.">Nature.</a>&nbsp;2011 Sep 11;478(7367):103-9.&nbsp;</li><li>Is&nbsp;There&nbsp;a&nbsp;Role&nbsp;for&nbsp;Genomics&nbsp;in&nbsp;the&nbsp;Management&nbsp;of Hypertension? <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Burrello%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Burrello J</a>1,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Monticone%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Monticone S</a>2,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Buffolo%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Buffolo F</a>3,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Tetti%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Tetti M</a>4,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Veglio%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Veglio F</a>5,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Williams%20TA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Williams TA</a>6,7,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Mulatero%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Mulatero P</a>8. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Is+There+a+Role+for+Genomics+in+the+Management+ofHypertension%3F&quot; \o &quot;International journal of molecular sciences.">Int J Mol Sci.</a>&nbsp;2017 May 26;18(6). </li></ol>
+                {{literature}}
+                    <!-- <ol><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21963141">Genetic variations in CYP17A1, CACNB2 and PLEKHA7 are associated with blood pressure and/orhypertension&nbsp;in She ethnic minority of China.</a> Lin Y, Lai X, Chen B, Xu Y, Huang B, Chen Z, Zhu S, Yao J, Jiang Q, Huang H, Wen J, Chen G. Atherosclerosis. 2011 Dec;219(2):709-14.</li><li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21462849">Genetics of&nbsp;hypertension. Current status.</a> Butler MG. J Med Liban. 2010 Jul-Sep;58(3):175-8. Review.</li><li>Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Ehret%20GB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Ehret GB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Munroe%20PB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Munroe PB</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Rice%20KM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Rice KM</a>,etc. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21909115&quot; \o &quot;Nature.">Nature.</a>&nbsp;2011 Sep 11;478(7367):103-9.&nbsp;</li><li>Is&nbsp;There&nbsp;a&nbsp;Role&nbsp;for&nbsp;Genomics&nbsp;in&nbsp;the&nbsp;Management&nbsp;of Hypertension? <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Burrello%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Burrello J</a>1,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Monticone%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Monticone S</a>2,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Buffolo%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Buffolo F</a>3,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Tetti%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Tetti M</a>4,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Veglio%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Veglio F</a>5,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Williams%20TA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Williams TA</a>6,7,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Mulatero%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=28587112">Mulatero P</a>8. <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Is+There+a+Role+for+Genomics+in+the+Management+ofHypertension%3F&quot; \o &quot;International journal of molecular sciences.">Int J Mol Sci.</a>&nbsp;2017 May 26;18(6). </li></ol> -->
                 <!-- <ol><li>Genetic variations in CYP17A1, CACNB2 and PLEKHA7 are associated with blood pressure and/orhypertension&nbsp;in She ethnic minority of China. Lin Y, Lai X, Chen B, Xu Y, Huang B, Chen Z, Zhu S, Yao J, Jiang Q, Huang H, Wen J, Chen G. Atherosclerosis. 2011 Dec;219(2):709-14.</li><li>Genetics of&nbsp;hypertension. Current status. Butler MG. J Med Liban. 2010 Jul-Sep;58(3):175-8. Review.</li><li>Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk. Ehret GB,&nbsp;Munroe PB,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Rice%20KM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=21909115">Rice KM</a>,etc. <a href="https://www.ncbi.nlm.nih.gov/pubmed/21909115&quot; \o &quot;Nature.">Nature.</a>&nbsp;2011 Sep 11;478(7367):103-9.&nbsp;</li><li>Is&nbsp;There&nbsp;a&nbsp;Role&nbsp;for&nbsp;Genomics&nbsp;in&nbsp;the&nbsp;Management&nbsp;of Hypertension?Burrello J1,&nbsp;Monticone S2,&nbsp;Buffolo F3,&nbsp;Tetti M4,&nbsp;Veglio F5,&nbsp;Williams TA6,7,&nbsp;Mulatero P Int J Mol Sci.&nbsp;2017 May 26;18(6). </li></ol> -->
             </div>
             <div class="inner-btn">...更多</div>
