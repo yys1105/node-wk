@@ -7,12 +7,13 @@ const escaper = require("true-html-escape");
 
 fs.readFile(__dirname + '/template/temp.html', { flag: 'r+', encoding: 'utf8' }, (err, data) => {
     if (err) throw err;
-    // 获取模板内容
-    var templateHtml = data;
+    
 
     // 批量处理word文件转成html
     fs.readdir(__dirname + '/docs/', (err, docs) => {
         docs.forEach((doc) => {
+            // 获取模板内容
+            var templateHtml = data;
             // 获取文件的路径
             let docPath = path.normalize(__dirname + '/docs/' + doc)
             // word转成html
